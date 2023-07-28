@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package = "medicare">
+    <class name = "CovidPatient" table = "covidpatientTable">
+        <id name = "cov_id" column = "covidId"/>
+        <property name = "name" column = "name"/>
+        <property name = "contact" column = "contact"/>
+        <property name = "gender" column = "gender"/>
+        <property name = "age" column = "age"/>
+        <property name = "address" column = "address"/>
+        <property name = "city" column = "city"/>
+        <property name = "status" column = "status"/>
+        <property name = "vaccineComp" column = "vaccineComplition"/>
+    </class>
+</hibernate-mapping>

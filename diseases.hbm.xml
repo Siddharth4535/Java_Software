@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package = "medicare">
+    <class name = "Diseases" table = "diseasesTable">
+        <id name = "dis_id" column = "id"/>
+<!--        <id name = "doc_id" column = "doctorId"/>-->
+        <property name = "disType" column = "diseasesType"/>
+        <property name = "cost" column = "costOfDiseases"/>
+        <property name = "doc_id" column = "doctorId"/>
+        <property name = "name" column = "doctorName"/>
+    </class>
+</hibernate-mapping>
